@@ -113,7 +113,7 @@ async function example4() {
 
 // ページを開いたときの案内
 window.onload = function () {
-    log('第2講: async / await ハンズオンへようこそ');
+    log('async / await ハンズオン');
     log('例1 → 例4 を順番に実行して、書き方の違いを確認しましょう');
     log('-------------------------------------------');
 };
