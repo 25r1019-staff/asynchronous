@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async / await</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9fafb;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; border-bottom: 2px solid #22c55e; padding-bottom: 10px; }
+        h2 { color: #555; font-size: 20px; }
+        .exercise {
+            background-color: #f0fdf4;
+            padding: 18px;
+            margin: 16px 0;
+            border-left: 4px solid #22c55e;
+            border-radius: 5px;
+        }
+        .exercise h3 { color: #16a34a; margin-top: 0; margin-bottom: 6px; }
+        .exercise p { color: #555; margin: 4px 0; }
+        button {
+            background-color: #22c55e;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 6px;
+        }
+        button:hover { background-color: #16a34a; }
+        #output {
+            background-color: #333;
+            color: #4ade80;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            height: 320px;
+            overflow-y: auto;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>async / await</h1>
+        <h2>お茶を淹れる例で、「順番に待つ」書き方を学習</h2>
+
+        <div class="exercise">
+            <h3>例1：Promiseチェーンで書く</h3>
+            <p>従来の書き方。.then() でつなげて、順番に処理します。</p>
+            <button onclick="example1()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例2：async / await で書く</h3>
+            <p>await で「完了を待つ」。上から順番に読みやすく書けます。</p>
+            <button onclick="example2()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例3：async関数の返り値を待つ</h3>
+            <p>async 関数が返す Promise を、await で受け取ります。</p>
+            <button onclick="example3()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例4：エラーは try / catch</h3>
+            <p>エラーが起きたら catch に飛び、その後も続行できます。</p>
+            <button onclick="example4()">実行</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
