@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Promiseの基本</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Promiseの基本</h1>
+        <h2>料理を例に、非同期処理とPromiseを順番に体験</h2>
+
+        <div class="exercise">
+            <h3>例1：非同期って何？</h3>
+            <p>setTimeoutを使うと、「待たずに次の処理」ができることを確認します。</p>
+            <button onclick="example1()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例2：料理の注文イメージ</h3>
+            <p>複数の注文が「待たずに」同時に進む様子（非同期）を確認します。</p>
+            <button onclick="example2()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例3：コールバック関数とは</h3>
+            <p>「関数を渡して、あとで呼んでもらう」仕組みを確認します。</p>
+            <button onclick="example3()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例4：Promise の作り方</h3>
+            <p>Promiseと resolve を使い、完成した値を .then() で受け取ります。</p>
+            <button onclick="example4()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例5：失敗する場合（reject / catch）</h3>
+            <p>材料切れなど失敗した場合の扱いを確認します。</p>
+            <button onclick="example5()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例6：Promiseの状態</h3>
+            <p>進行中（pending）→ 成功（fulfilled）と変わる様子を確認します。</p>
+            <button onclick="example6()">実行</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
