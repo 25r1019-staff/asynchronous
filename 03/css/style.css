@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fffdf5;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  border-bottom: 2px solid #f59e0b;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #555;
+  font-size: 20px;
+}
+
+.exercise {
+  background-color: #fffbeb;
+  padding: 18px;
+  margin: 16px 0;
+  border-left: 4px solid #f59e0b;
+  border-radius: 5px;
+}
+
+.exercise h3 {
+  color: #b45309;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.exercise p {
+  color: #555;
+  margin: 4px 0;
+}
+
+button {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+button:hover {
+  background-color: #d97706;
+}
+
+#output {
+  background-color: #333;
+  color: #fbbf24;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  height: 320px;
+  overflow-y: auto;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+small {
+  color: #999;
+}

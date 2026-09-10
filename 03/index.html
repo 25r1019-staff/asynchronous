@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fetch でデータを取得</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch でデータを取得</h1>
+        <h2>無料テストAPI「JSONPlaceholder」を使って体験</h2>
+
+        <div class="exercise">
+            <h3>例1：データを1件取得する</h3>
+            <p>fetch で /users/1 を取得し、名前とメールを表示します。</p>
+            <button onclick="example1()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例2：一覧を取得する</h3>
+            <p>投稿一覧を取得し、タイトルを数件表示します。</p>
+            <button onclick="example2()">実行</button>
+        </div>
+
+        <div class="exercise">
+            <h3>例3：データを送信する（POST）</h3>
+            <p>新しいTODOをサーバーに送って、作られた結果を受け取ります。</p>
+            <button onclick="example3()">実行</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
